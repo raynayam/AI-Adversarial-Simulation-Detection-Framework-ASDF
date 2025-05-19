@@ -8,17 +8,6 @@ A unique, modular cybersecurity project that simulates real-world attacks (Red T
 - **Adversarial AI:** ML model adapts Red Team attack patterns based on Blue Team detection.
 - **Dockerized:** Easy to run and demo.
 
-## Project Structure
-```
-asdf-cyber/
-├── attacks/
-├── detection/
-├── ai_adversary/
-├── dashboard/
-├── docker/
-├── README.md
-└── requirements.txt
-```
 
 ## Quick Start
 1. Clone the repo
