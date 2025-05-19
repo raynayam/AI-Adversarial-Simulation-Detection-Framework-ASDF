@@ -1,0 +1,8 @@
+flask
+flask-cors
+osquery
+scikit-learn
+pandas
+numpy
+requests
+flask-login 
