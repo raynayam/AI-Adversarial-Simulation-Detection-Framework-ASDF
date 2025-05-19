@@ -1,5 +1,4 @@
 # Adversarial Simulation & Detection Framework (ASDF)
-
 A unique, modular cybersecurity project that simulates real-world attacks (Red Team) and provides automated detection, alerting, and reporting (Blue Team) — all in a modern, extensible framework.
 
 ## Features
