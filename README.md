@@ -18,39 +18,15 @@ A unique, modular cybersecurity project that simulates real-world attacks (Red T
 - Add new attacks in `attacks/`
 - Add new detection rules in `detection/`
 
-## System Architecture
-
-Here's a diagram illustrating the main components and data flow:
-
-```mermaid
-graph TD
-    A[Browser (User)] --> B(Frontend\n(React in Docker))
-    B --> C(Backend\n(Flask in Docker))
-    C --> D{Modules}
-    D --> E[Attacks\nSimulation]
-    D --> F[Detection\nLogic]
-    D --> G[AI Adversary\n(Adapts Attacks)]
-    F --> H[Logs / OSQuery\n(Data Source)]
-    C --> I[Database\n(SQLite)]
-    F --> I
-    E --> I
-    G --> E
-    C --> A
-
-    classDef default fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef docker fill:#ccf,stroke:#333,stroke-width:2px;
-    classDef db fill:#cfc,stroke:#333,stroke-width:2px;
-
-    class B,C docker;
-    class I db;
-```
-
 **Explanation:**
 
 *   The **Browser (User)** interacts with the **Frontend (React in Docker)**.
 *   The **Frontend** communicates with the **Backend (Flask in Docker)** via API calls.
 *   The **Backend** orchestrates the core logic, interacting with:
-    *   **Attacks Simulation** modules (Red Team actions).
+    *   **Attacks Simulation** modules (Red Team actions).<img width="942" alt="Screenshot 2025-05-19 at 2 32 00 PM" src="https://github.com/user-attachments/assets/b30134f8-aaf1-4ec2-96c4-ded983a99f65" />
+<img width="942" alt="Screenshot 2025-05-19 at 2 31 38 PM" src="https://github.com/user-attachments/assets/1167a09b-0e63-4e58-a4f5-ba76975771cc" />
+<img width="942" alt="Screenshot 2025-05-19 at 2 31 28 PM" src="https://github.com/user-attachments/assets/de0a8849-6b19-4906-bb1b-e77de3813e0e" />
+
     *   **Detection Logic** modules (Blue Team analysis).
     *   The **AI Adversary** module (adapts attacks based on detection feedback).
     *   The **Database (SQLite)** for storing events (attacks, detections, responses) and user information.
